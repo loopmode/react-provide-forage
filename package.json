@@ -1,7 +1,7 @@
 {
   "name": "react-provide-forage",
   "version": "0.0.1",
-  "description": "",
+  "description": "HOC and decorator for feeding localforage values to react components",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib/* && babel src --out-dir lib",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/loopmode/react-provide-forage.git"
   },
-  "keywords": [],
+  "keywords": ["react", "localforage"],
   "author": "Jovica Aleksic <jovica.aleksic@loopmode.de>",
   "license": "MIT",
   "bugs": {
@@ -29,7 +29,7 @@
     "babel-preset-stage-1": "^6.24.1"
   },
   "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.0"
+    "prop-types": ">=0.14",
+    "react": ">=0.14"
   }
 }

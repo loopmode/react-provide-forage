@@ -8,7 +8,7 @@ A higher-order-componennt and a decorator for providing localforage values to re
 
 If you want to provide localforage data to child components in the JSX tree you control, you can use the component:
 
-```
+```javascript
 import React, { Component } from 'react';
 import ProvideForage from 'react-provide-forage'
 import localforage from 'localforage';
@@ -37,7 +37,7 @@ The `MyTabbedComponent` will receive an additional prop `activeIndex` as soon as
 If you want to provide data "to yourself", you can use the decorator:
 
 
-```
+```javascript
 import React, { Component } from 'react';
 import { connectForage } from 'react-provide-forage'; 
 import localforage from 'localforage';
@@ -65,7 +65,7 @@ export default class MyComponent extends Component {
 If you prefer not to use ES7 decorator syntax, you can write the same as:
 
 
-```
+```javascript
 import React, { Component } from 'react';
 import { connectForage } from 'react-provide-forage'; 
 import localforage from 'localforage';
