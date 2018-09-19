@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
-export default class ProvideForage extends PureComponent {
+export default class ProvideForage extends Component {
     static propTypes = {
         children: PropTypes.node,
         storage: PropTypes.shape({
