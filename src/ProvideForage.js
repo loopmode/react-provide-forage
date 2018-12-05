@@ -46,19 +46,21 @@ export default class ProvideForage extends Component {
         });
     }
     render() {
+        if (!this.props.children || !React.Children.count(this.props.children)) {
+            return null;
+        }
+        const childProps = {
+            ...this.state.storageValues,
+            ...this.state.propagationValues
+        };
         return React.Children.map(this.props.children, child => {
-            return React.cloneElement(child, {
-                ...this.state.storageValues,
-                ...this.state.propagationValues
-            });
+            return child ? React.cloneElement(child, childProps) : null;
         });
     }
 
     async updateStorageValues() {
-        if (this._isMounted) {
-            const storageValues = await this.getStorageValues();
-            this._isMounted && this.setState({ storageValues });
-        }
+        const storageValues = await this.getStorageValues();
+        this._isMounted && this.setState({ storageValues });
     }
     async getStorageValues(ownProps = this.props) {
         let { provide, storage } = ownProps;

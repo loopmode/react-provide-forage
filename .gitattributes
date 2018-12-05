@@ -1,0 +1,3 @@
+*.json eol=lf
+*.jsx  eol=lf
+*.js   eol=lf

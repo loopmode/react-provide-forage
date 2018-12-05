@@ -1,7 +1,7 @@
 {
   "name": "react-provide-forage",
-  "version": "0.0.3",
-  "description": "HOC and decorator for feeding localforage values to react components",
+  "version": "0.0.4",
+  "description": "HOC and decorator for feeding localforage data to react components",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib/* && babel src --out-dir lib",

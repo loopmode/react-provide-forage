@@ -1,5 +1,5 @@
-import React from "react";
-import ProvideForage from "./ProvideForage";
+import React from 'react';
+import ProvideForage from './ProvideForage';
 
 export default function connectStorage(storage, provide) {
     return Child => props => (
